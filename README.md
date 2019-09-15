@@ -1,5 +1,5 @@
 # MoldAI
-MoldAI is a computer vision app that classifies common strains of mold on surfaces and displays information about it.
+MoldAI is a computer vision web app that classifies common strains of mold on surfaces and displays information about it.
 
 To run this app you will need the following installed:
   - Flask
