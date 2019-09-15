@@ -1,15 +1,12 @@
-from flask import Flask, request,render_template, redirect
+from flask import Flask, request,render_template
 from torch_model import *
 from PIL import Image
 import numpy as np
 import json
-import cv2
-import io
 import os
 
 
 app = Flask(__name__)
-APP_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 #this file stores some info and links about all the strains we care bout
 with open('strain_info.json') as json_file:
