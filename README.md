@@ -5,7 +5,7 @@ To run this app you will need the following installed:
   - Flask
   - Pllow
   - PyTorch
-  - Efficientnet-Pytorch
+  - Efficientnet-Pytorch (instructions here https://github.com/lukemelas/EfficientNet-PyTorch#example-feature-extraction)
   - os
   - numpy
   - io
