@@ -16,7 +16,7 @@ with open('strain_info.json') as json_file:
 
 @app.route('/',methods=["GET", "POST"])
 def index():
-    yeet = {}
+    stuff = []
     if request.method == "POST":
         if request.files:
             imagefile = request.files.get('image', '') 
