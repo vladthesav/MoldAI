@@ -5,10 +5,7 @@ To run this app you will need the following installed:
   - Flask
   - Pllow
   - PyTorch
-  - EfficientNet-Pytorch (instructions here https://github.com/lukemelas/EfficientNet-PyTorch)
-  - os
-  - numpy
-  - io
+  - EfficientNet-Pytorch (instructions on how to download here https://github.com/lukemelas/EfficientNet-PyTorch)
   
  Start the server use the following command:
     -- python server.py
