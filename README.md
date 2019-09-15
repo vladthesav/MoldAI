@@ -9,7 +9,7 @@ To run this app you will need the following installed:
   - PyTorch
   - EfficientNet-Pytorch (instructions on how to download here https://github.com/lukemelas/EfficientNet-PyTorch)
   
- Start the server use the following command:
+ Start the server with the following command:
     -- python server.py
  
   
