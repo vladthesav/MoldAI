@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html>
 <body>
-
+  <style>
+  
+  </style>
+<h1>MoldAI</h1>
 {% block main %}
 
 <div class="container">
   <div class="row">
     <div class="col">
 
-      <h1>Upload an image</h1>
+      <h3>Upload an image</h3>
       <hr>
 
-      <form action="/index" method="POST" enctype="multipart/form-data">
+      <form action="/" method="POST" enctype="multipart/form-data">
 
         <div class="form-group">
           <div class="custom-file">
@@ -29,8 +32,13 @@
 </div>
 
 {% endblock %}
-{% for key, value in predictions.items() %}
-      <h2>{{key}}:{{value}}</h1>
+{% for thing in info %}
+      <br>
+      <h3>{{thing[0]}} : {{thing[1]}}</h3>
+      <p><a href = '{{thing[2]}}/'> {{thing[3]}}</p>
+
+      </br>
+      
    {% endfor %}
 </form>
 </body>
