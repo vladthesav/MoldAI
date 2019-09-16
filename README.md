@@ -9,10 +9,11 @@ To run this app you will need the following installed:
   - PyTorch
   - EfficientNet-Pytorch (instructions on how to download here https://github.com/lukemelas/EfficientNet-PyTorch)
   
- To use this app use the following bash commmands:
-    git clone https://github.com/vladthesav/MoldAI.git
-    cd MoldAI
-    python server.py
+  
+To use this app use the following bash commmands:
+   - git clone https://github.com/vladthesav/MoldAI.git
+   - cd MoldAI
+   - python server.py
     
  After that connect to your local machine and you're set!
  
