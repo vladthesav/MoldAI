@@ -5,7 +5,7 @@ It consists of a PyTorch model running inside of a flask server that takes an im
 
 To run this app you will need the following installed:
   - Flask
-  - Pllow
+  - Pillow
   - PyTorch
   - EfficientNet-Pytorch (instructions on how to install here https://github.com/lukemelas/EfficientNet-PyTorch)
   
