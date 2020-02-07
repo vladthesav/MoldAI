@@ -49,7 +49,7 @@ class_list = ['Chaetomium',
 def get_predictions(x):
     return net.probabilities(tfms(x).unsqueeze(0)).detach().numpy()
 
-#now return a dictioany of the form {C_i: P(C_i| mold there and model params)}
+#now return a dictioany of the form {C_i: predictions_i}
 def get_output_dict(x):
     preds = get_predictions(x)[0]
     return {c:d for c,d in zip(class_list,preds)}
