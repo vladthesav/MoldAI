@@ -27,12 +27,11 @@ def index():
             #this is where the ml happens
             out = get_output_dict(image)
             
-            #here we loop through a dictionary of predictions {class_i: P(class_i | mold there and model params)
+            #here we loop through a dictionary of predictions {class_i: predictions_i}
             stuff = []
             for k in out.keys():
                 #here we pack in the class name (k), probability as percent, class wiki link, and class info (some text from wikipedia)
                 thing = [k, str(100*float(out[k]))[:4]+'%',strain_info[k]['wiki'],strain_info[k]['info']]
-                #stuff.append('<div><h3>'+k + ': ' + str(100*float(out[k]))[:4] + '%<a></h3><p><a href ={}>{}<a></p></div>'.format(strain_info[k]['wiki'],strain_info[k]['info']))
                 stuff.append(thing)
             
 
