@@ -1,0 +1,5 @@
+torch==1.8.1
+torchvision==0.9.1
+efficientnet_pytorch==0.7.1
+pillow==7.0.0
+flask==1.1.2

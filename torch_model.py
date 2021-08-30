@@ -47,7 +47,12 @@ class_list = ['Chaetomium',
 
 #gets rescaled predictions as a numpy array
 def get_predictions(x):
-    return net.probabilities(tfms(x).unsqueeze(0)).detach().numpy()
+    #make sure it's rgb
+    x = x.convert("RGB")
+    x = tfms(x).unsqueeze(0)
+
+    with torch.no_grad(): out = net.probabilities(x).detach().numpy()
+    return out
 
 #now return a dictioany of the form {C_i: predictions_i}
 def get_output_dict(x):
